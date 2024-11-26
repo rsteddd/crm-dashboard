@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@400;600&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="dashboard">
+    <nav class="dashboard__nav">
+        <div class="dashboard__header">
+            <h1 class="dashboard__logo">
+                <img src="assets/icons/Logo.svg" alt="Dashboard" class="dashboard__icon__logo">
+                <span class="dashboard__title">Dashboard</span>
+                <span class="dashboard__version">v.01</span>
+            </h1>
+        </div>
+
+        <ul class="dashboard__list">
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link">
+                    <img src="assets/icons/dashboardLogo.svg" alt="Dashboard" class="dashboard__icon">
+                    Dashboard
+                    <svg width="16"  height="16" class="dashboard__icon__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+
+                </a>
+            </li>
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link">
+                    <img src="assets/icons/productLogo.svg" alt="Product" class="dashboard__icon">
+                    Product
+                    <svg width="16"  height="16" class="dashboard__icon__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link dashboard__link--active">
+                    <img src="assets/icons/customersLogo.svg" alt="Customers" class="dashboard__icon">
+                    Customers
+                    <svg width="16"  height="16" class="dashboard__icon__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="white" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link">
+                    <img src="assets/icons/walletLogo.svg" alt="Income" class="dashboard__icon">
+                    Income
+                    <svg width="16"  height="16" class="dashboard__icon__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link">
+                    <img src="assets/icons/discountLogo.svg" alt="Promote" class="dashboard__icon">
+                    Promote
+                    <svg width="16"  height="16" class="dashboard__icon__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="dashboard__item">
+                <a href="#" class="dashboard__link">
+                    <img src="assets/icons/questionLogo.svg" alt="Help" class="dashboard__icon">
+                    Help
+                    <svg width="16" class="dashboard__icon__arrow" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L10 8L6 4"  stroke="currentColor" stroke-width="2" stroke-linecap="round"  stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <div class="dashboard__profile">
+        <img src="assets/icons/profile.svg" alt="Profile" class="dashboard__icon__profile">
+        <div class="dashboard__text">
+            <p class="dashboard__name">Evano</p>
+            <span class="dashboard__role">Project Manager</span>
+        </div>
+    </div>
+    </nav>
+
+    <main class="dashboard__main">
+        <header class="dashboard__header">
+            <h1 class="dashboard__greeting">Hello Evano 👋🏼,</h1>
+        </header>
+        <div class="dashboard__table">
+
+            <div class="dashboard__top">
+
+                <div class="dashboard__container">
+                    <h2 class="dashboard__title">All Customers</h2>
+                    <span class="dashboard__subtitle">Active Members</span>
+                </div>
+
+                <div class="dashboard__search">
+                    <img class="m-auto" src="/assets/icons/search.svg" alt="search" width={18} height={18}/>
+                    <input  class="dashboard__input" id="searchInput" placeholder="Search"/>
+                </div>
+            </div>
+            <div class="table__header">
+                <div>Customer Name</div>
+                <div>Company</div>
+                <div>Phone Number</div>
+                <div>Email</div>
+                <div>Country</div>
+                <div>Status</div>
+
+            </div>
+            <div id="table">
+            <div class="table__row">
+                <div>Jane Cooper</div>
+                <div>Microsoft</div>
+                <div>(225) 555-0118</div>
+                <div>jane@microsoft.com</div>
+                <div>United States</div>
+                <div><button class="status status--active">Active</button></div>
+            </div>
+            <div class="table__row">
+                <div>Floyd Miles</div>
+                <div>Yahoo</div>
+                <div>(205) 555-0100</div>
+                <div>floyd@yahoo.com</div>
+                <div>Kiribati</div>
+                <div><button class="status status--inactive">Inactive</button></div>
+            </div>
+            <div class="table__row">
+                <div>Ronald Richards</div>
+                <div>Adobe</div>
+                <div>(302) 555-0107</div>
+                <div>ronald@adobe.com</div>
+                <div>Israel</div>
+                <div><button class="status status--inactive">Inactive</button></div>
+            </div>
+            <div class="table__row">
+                <div>Marvin McKinney</div>
+                <div>Tesla</div>
+                <div>(252) 555-0126</div>
+                <div>marvin@tesla.com</div>
+                <div>Iran</div>
+                <div><button class="status status--active">Active</button></div>
+        </div>
+            <div class="table__row">
+                <div>Jerome Bell</div>
+                <div>Google</div>
+                <div>(629) 555-0129</div>
+                <div>jerome@google.com</div>
+                <div>Réunion</div>
+                <div><button class="status status--active">Active</button></div>
+        </div>
+            <div class="table__row">
+                <div>Kathryn Murphy</div>
+                <div>Microsoft</div>
+                <div>(406) 555-0120</div>
+                <div>kathryn@microsoft.com</div>
+                <div>Curaçao</div>
+                <div><button class="status status--active">Active</button></div>
+            </div>
+            <div class="table__row">
+                <div>Jacob Jones</div>
+                <div>Yahoo</div>
+                <div>(208) 555-0112</div>
+                <div>jacob@yahoo.com</div>
+                <div>Brazil</div>
+                <div><button class="status status--active">Active</button></div>
+            </div>
+            <div class="table__row">
+                <div>Kristin Watson</div>
+                <div>Facebook</div>
+                <div>(704) 555-0127</div>
+                <div>kristin@facebook.com</div>
+                <div>Åland Islands</div>
+                <div><button class="status status--inactive">Inactive</button></div>
+            </div>
+            </div>
+            <div class="table__container">
+                <span class="dashboard__span">Showing data 1 to 8 of 256K entries</span>
+                <div class="table__pagination">
+                    <button class="table__arrow">&lt;</button>
+                    <button class="table__page table__page__active">1</button>
+                    <button class="table__page">2</button>
+                    <button class="table__page">3</button>
+                    <button class="table__page">4</button>
+                    <span class="table__dots">...</span>
+                    <button class="table__page">40</button>
+                    <button class="table__arrow">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
